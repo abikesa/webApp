@@ -30,3 +30,8 @@ function calculateMortalityRisk() {
 }
 
 document.getElementById("calculate-risk-button").addEventListener("click", calculateMortalityRisk);
+
+// Add event listener to the dropdown to update the scenarioVector
+document.getElementById("scenario-dropdown").addEventListener("change", function() {
+  selectScenario(this.value);
+});
